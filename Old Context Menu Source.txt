@@ -35,4 +35,5 @@ goto restart_explorer
 taskkill /F /IM explorer.exe && start explorer.exe
 echo Explorer has been restarted. Changes applied.
 pause
+
 exit
