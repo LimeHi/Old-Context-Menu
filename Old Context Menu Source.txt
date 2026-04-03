@@ -1,33 +1,220 @@
-#profile-title: 🍋‍🟩LimeVPN🍋‍🟩
-#profile-update-interval: 1
-#announce: ❗Извините за неудобства❗
-#support-url: https://t.me/LimeVPNHelpbot
-#profile-web-page-url: https://t.me/LimeVPNSub
-#hide-settings: 1
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMaW1lVlBORlJFRQ@sub.limevpn.lol:8443#%D0%9F%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D0%BA%D0%B0%20%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%20%D0%BE%D1%82%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B0
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMaW1lVlBORlJFRQ@sub.limevpn.lol:8443#%D0%98%D0%B7%D0%B2%D0%B8%D0%BD%D0%B8%D1%82%D0%B5%20%D0%B7%D0%B0%20%D0%BD%D0%B5%D1%83%D0%B4%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%BE
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMaW1lVlBORlJFRQ@sub.limevpn.lol:8443#%D0%9C%D1%8B%20%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D1%8F%D0%B5%D0%BC%20%D0%BF%D0%B5%D1%80%D0%B5%D1%85%D0%BE%D0%B4%20%D0%B8%D0%B7%20Happ
-vless://849f5934-e758-476e-b750-b5b8e7a77aa1@at.pfvpn.cfd:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=sun6-22.userapi.com&fp=chrome&security=reality&pbk=kBoDu-XGsevG0oFyH-4834YDSjM9bLYuPVvEepNq7Gc&sid=2f97f5aecbc47c#%F0%9F%87%A6%F0%9F%87%B9%20%D0%90%D0%B2%D1%81%D1%82%D1%80%D0%B8%D1%8F
-vless://f5293938-8562-4e02-9cef-9663f0977c4b@fin.aprux.ru:8443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=google.com&fp=firefox&security=reality&pbk=qh09oMH5d3OWilniu8_8hC42ZPr8hvdUrOK6xq-QWWg&sid=b670#%F0%9F%87%AB%F0%9F%87%AE%20%D0%A4%D0%B8%D0%BD%D0%BB%D1%8F%D0%BD%D0%B4%D0%B8%D1%8F%201
-vless://c220f447-badb-4120-aa3c-8c10f0a6dcb0@fin3.odavpn.online:8443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=yahoo.com&fp=firefox&security=reality&pbk=mr3xhE5Q5uCP5er1wbOo8oWyf-FzpuPhY8rifZ0A8zU&sid=6c#%F0%9F%87%AB%F0%9F%87%AE%20%D0%A4%D0%B8%D0%BD%D0%BB%D1%8F%D0%BD%D0%B4%D0%B8%D1%8F%202
-vless://c220f447-badb-4120-aa3c-8c10f0a6dcb0@usa8.odavpn.online:51608/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=ya.ru&fp=chrome&security=reality&pbk=FuP-t3bufgX252PbrvA0lc8wgj5x5xNsTAwzOeWL5yE&sid=aabbccdd#%F0%9F%87%B7%F0%9F%87%BA%20%D0%9E%D0%B1%D1%85%D0%BE%D0%B4%20%D0%93%D0%BB%D1%83%D1%88%D0%B8%D0%BB%D0%BE%D0%BA%201
-vless://c220f447-badb-4120-aa3c-8c10f0a6dcb0@usa11.odavpn.online:30960/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=ya.ru&fp=chrome&security=reality&pbk=Dw2a0ai7KThOrIIpxQmlRBJ-eAfa6CohlDP-6tPuVQQ&sid=aabbccdd#%F0%9F%87%B7%F0%9F%87%BA%20%D0%9E%D0%B1%D1%85%D0%BE%D0%B4%20%D0%93%D0%BB%D1%83%D1%88%D0%B8%D0%BB%D0%BE%D0%BA%202
-vless://c220f447-badb-4120-aa3c-8c10f0a6dcb0@nl5.odavpn.online:49107/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=ya.ru&fp=chrome&security=reality&pbk=0ow46Y1flXJfuWVvGf7hvdvZOEXq3EfHGd8gCI6-AgY&sid=aabbccdd#%F0%9F%87%B3%F0%9F%87%B1%20%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%8B%20%D0%9E%D0%B1%D1%85%D0%BE%D0%B4%20%D0%93%D0%BB%D1%83%D1%88%D0%B8%D0%BB%D0%BE%D0%BA
-vless://c220f447-badb-4120-aa3c-8c10f0a6dcb0@es2.odavpn.online:8443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=yahoo.com&fp=firefox&security=reality&pbk=Lh312Hq73Oz1kQJDu0YtvhjcQK1KHvCtpBXZuONOBxk&sid=6c#%F0%9F%87%AA%F0%9F%87%B8%20%D0%98%D1%81%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F
-vless://c220f447-badb-4120-aa3c-8c10f0a6dcb0@116.206.93.243:8443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=yahoo.com&fp=firefox&security=reality&pbk=sFdSL6fMCutsGliSYnWTvyxI7Ndczf3waMXprLVw4z8&sid=6c#%F0%9F%87%AF%F0%9F%87%B5%20%D0%AF%D0%BF%D0%BE%D0%BD%D0%B8%D1%8F
-vless://b0d5d075-b0c4-4aaf-89e3-c539daa45e2d@62.152.59.69:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=max.ru&security=reality&pbk=yOvW1TZSlp5YvRh3BcYnfdchi_4i-giWMotW9RCEKwM&sid=#%F0%9F%87%B7%F0%9F%87%BA%20%D0%9E%D0%B1%D1%85%D0%BE%D0%B4%20%D0%93%D0%BB%D1%83%D1%88%D0%B8%D0%BB%D0%BE%D0%BA%201
-vless://b0d5d075-b0c4-4aaf-89e3-c539daa45e2d@217.16.16.30:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=ads.x5.ru&security=reality&pbk=OEEYXNDZnKMmvuoLtiFEBrylE4TNsNqpljXneg_P7h4&sid=#%F0%9F%87%B7%F0%9F%87%BA%20%D0%9E%D0%B1%D1%85%D0%BE%D0%B4%20%D0%93%D0%BB%D1%83%D1%88%D0%B8%D0%BB%D0%BE%D0%BA%202
-vless://b0d5d075-b0c4-4aaf-89e3-c539daa45e2d@217.16.16.127:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=max.ru&security=reality&pbk=EOYB1vJ1vS4UvccNSsvVP7DLa5C6636l8PbYZbzt_iU&sid=#%F0%9F%87%B7%F0%9F%87%BA%20%D0%9E%D0%B1%D1%85%D0%BE%D0%B4%20%D0%93%D0%BB%D1%83%D1%88%D0%B8%D0%BB%D0%BE%D0%BA%203
-vless://b0d5d075-b0c4-4aaf-89e3-c539daa45e2d@62.152.59.54:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=max.ru&security=reality&pbk=JWxbwI8Zyur6Z5nor337WmoC_R6hY-Tn6baMEUQ6FWQ&sid=#%F0%9F%87%B7%F0%9F%87%BA%20%D0%9E%D0%B1%D1%85%D0%BE%D0%B4%20%D0%93%D0%BB%D1%83%D1%88%D0%B8%D0%BB%D0%BE%D0%BA%204
-vless://b0d5d075-b0c4-4aaf-89e3-c539daa45e2d@95.163.214.70:445/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=max.ru&security=reality&pbk=1T80oS561xTOcWGdEcIzAiG2LbeNUn0G2wGEm_nNcyY&sid=#%F0%9F%87%B7%F0%9F%87%BA%20%D0%9E%D0%B1%D1%85%D0%BE%D0%B4%20%D0%93%D0%BB%D1%83%D1%88%D0%B8%D0%BB%D0%BE%D0%BA%205
-vless://b0d5d075-b0c4-4aaf-89e3-c539daa45e2d@77.246.158.161:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=ya.ru&security=reality&pbk=Cm5ExhcN8OpXLCY5C2fdT5QZdrhZzG5lxsGa7g4sGG0&sid=#%F0%9F%87%B7%F0%9F%87%BA%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%20%D0%9E%D0%B1%D1%85%D0%BE%D0%B4%20%D0%93%D0%BB%D1%83%D1%88%D0%B8%D0%BB%D0%BE%D0%BA
-vless://b0d5d075-b0c4-4aaf-89e3-c539daa45e2d@185.112.59.199:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=github.com&security=reality&pbk=I_72571ePMcQNh9DeFxjTvTRvGWKDRRn-nXuY-dBxFw&sid=#%F0%9F%87%B3%F0%9F%87%B1%20%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%8B
-vless://b0d5d075-b0c4-4aaf-89e3-c539daa45e2d@2.27.120.202:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=google.com&security=reality&pbk=L-RxJSQQNZx8H4PRM6lUkRbCNJfpMz69tqHM_nzsDzQ&sid=#%F0%9F%87%A9%F0%9F%87%AA%20%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D1%8F
-vless://b0d5d075-b0c4-4aaf-89e3-c539daa45e2d@147.45.60.177:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=platega.io&security=reality&pbk=kliEKjlCOTjuteEqyyh4M0X2HUcHMh197sDSnNcY7Ds&sid=#%F0%9F%87%BA%F0%9F%87%B8%20%D0%A1%D0%A8%D0%90
-vless://b0d5d075-b0c4-4aaf-89e3-c539daa45e2d@2.27.120.202:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=google.com&security=reality&pbk=L-RxJSQQNZx8H4PRM6lUkRbCNJfpMz69tqHM_nzsDzQ&sid=#%F0%9F%87%AA%F0%9F%87%BA%20%D0%94%D0%BB%D1%8F%20%D0%B8%D0%B3%D1%80
-vless://b0d5d075-b0c4-4aaf-89e3-c539daa45e2d@138.124.241.248:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=github.com&security=reality&pbk=WLorHRQzHtiXR2Afc5D8IFOEFl-MFRyOFDKfNGmdUSY&sid=#%F0%9F%87%AA%F0%9F%87%BA%20%D0%94%D0%BB%D1%8F%20%D0%B8%D0%B3%D1%80%20%28%D0%A0%D0%B5%D0%B7%D0%B5%D1%80%D0%B2%29
-vless://b0d5d075-b0c4-4aaf-89e3-c539daa45e2d@95.85.245.112:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=max.ru&security=reality&pbk=W22BJZk_-gGzOuyaQWFyfaf9dARz3a4sApLXQXa__Ss&sid=#%F0%9F%87%AA%F0%9F%87%BA%20%D0%B4%D0%BB%D1%8F%20Telegram%20%D0%9E%D0%B1%D1%85%D0%BE%D0%B4%20%D0%93%D0%BB%D1%83%D1%88%D0%B8%D0%BB%D0%BE%D0%BA
-vless://b0d5d075-b0c4-4aaf-89e3-c539daa45e2d@138.124.241.248:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=github.com&security=reality&pbk=WLorHRQzHtiXR2Afc5D8IFOEFl-MFRyOFDKfNGmdUSY&sid=#%F0%9F%87%AA%F0%9F%87%BA%20%D0%B4%D0%BB%D1%8F%20Brawl%20Stars
-vless://b0d5d075-b0c4-4aaf-89e3-c539daa45e2d@138.124.241.248:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=github.com&security=reality&pbk=WLorHRQzHtiXR2Afc5D8IFOEFl-MFRyOFDKfNGmdUSY&sid=#%F0%9F%87%AA%F0%9F%87%BA%20%D0%B4%D0%BB%D1%8F%20Clash%20Royale
-vless://b0d5d075-b0c4-4aaf-89e3-c539daa45e2d@2.27.120.202:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=google.com&security=reality&pbk=L-RxJSQQNZx8H4PRM6lUkRbCNJfpMz69tqHM_nzsDzQ&sid=#%F0%9F%87%AA%F0%9F%87%BA%20%D0%B4%D0%BB%D1%8F%20Gemini
-vless://b0d5d075-b0c4-4aaf-89e3-c539daa45e2d@147.45.60.177:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=platega.io&security=reality&pbk=kliEKjlCOTjuteEqyyh4M0X2HUcHMh197sDSnNcY7Ds&sid=#%F0%9F%87%AA%F0%9F%87%BA%20%D0%B4%D0%BB%D1%8F%20ChatGPT
+import os
+import logging
+import asyncio
+import json
+import aiohttp
+import base64
+import time
+from aiohttp import web
+from aiogram import Bot, Dispatcher, types
+from aiogram.utils import exceptions
+
+# Настройка логирования
+logging.basicConfig(level=logging.INFO)
+
+# --- БЛОК КОНФИГУРАЦИИ (МЕНЯТЬ ТУТ) ---
+API_TOKEN = os.getenv("TELEGRAM_TOKEN")
+RENDER_URL = os.getenv("RENDER_EXTERNAL_HOSTNAME", "limevpnsubbot.onrender.com")
+
+# Ссылка на ваши сервера (Pastebin)
+CONFIG_PASTE_URL = "https://pastebin.com/raw/iGePX40Y" 
+
+# Настройки платежей
+PAYMENT_AMOUNT = 140.0  
+PLATEGA_MERCHANT_ID = os.getenv("PLATEGA_MERCHANT_ID")
+PLATEGA_SECRET = os.getenv("PLATEGA_SECRET")
+BASE_URL = "https://app.platega.io"
+
+# GitHub БД
+GH_TOKEN = os.getenv("GITHUB_TOKEN")
+GH_REPO = os.getenv("GITHUB_REPO")
+GH_FILE = os.getenv("GITHUB_FILENAME", "database.txt")
+
+bot = None
+dp = None
+
+if API_TOKEN:
+    try:
+        bot = Bot(token=API_TOKEN)
+        dp = Dispatcher(bot)
+        logging.info("✅ Бот LimeСБП успешно запущен.")
+    except exceptions.ValidationError:
+        logging.error("❌ ОШИБКА: Токен Telegram невалиден!")
+
+# --- РАБОТА С GITHUB API ---
+
+async def is_user_in_db(user_id):
+    if not GH_TOKEN or not GH_REPO: return False
+    target_id = str(user_id).strip()
+    url = f"https://api.github.com/repos/{GH_REPO}/contents/{GH_FILE}"
+    headers = {"Authorization": f"token {GH_TOKEN}", "Accept": "application/vnd.github.v3+json"}
+    async with aiohttp.ClientSession() as session:
+        try:
+            async with session.get(url, headers=headers, timeout=10) as resp:
+                if resp.status == 200:
+                    data = await resp.json()
+                    content = base64.b64decode(data['content']).decode('utf-8')
+                    return target_id in [line.strip() for line in content.splitlines()]
+        except: pass
+    return False
+
+async def add_user_to_github(user_id):
+    if not GH_TOKEN or not GH_REPO: return False
+    url = f"https://api.github.com/repos/{GH_REPO}/contents/{GH_FILE}"
+    headers = {"Authorization": f"token {GH_TOKEN}", "Accept": "application/vnd.github.v3+json"}
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url, headers=headers) as resp:
+            sha, content = "", ""
+            if resp.status == 200:
+                data = await resp.json()
+                sha = data['sha']
+                content = base64.b64decode(data['content']).decode('utf-8')
+            if str(user_id) in content.splitlines(): return True
+            new_content = content + f"{user_id}\n"
+            payload = {"message": f"Pay {user_id}", "content": base64.b64encode(new_content.encode()).decode(), "sha": sha}
+            async with session.put(url, json=payload, headers=headers) as p:
+                return p.status in [200, 201]
+
+# --- ЛОГИКА БОТА ---
+
+def get_main_kb():
+    kb = types.InlineKeyboardMarkup(row_width=1)
+    kb.add(
+        types.InlineKeyboardButton(f"💎 АКТИВИРОВАТЬ LimeСБП — {int(PAYMENT_AMOUNT)} ₽", callback_data="start_payment"),
+        types.InlineKeyboardButton("ℹ️ ИНФОРМАЦИЯ", callback_data="info_menu")
+    )
+    return kb
+
+@dp.message_handler(commands=['start'])
+async def cmd_start(message: types.Message):
+    uid = message.from_user.id
+    if await is_user_in_db(uid):
+        await message.reply(
+            f"✅ **ДОСТУП АКТИВИРОВАН!**\n\n"
+            f"Нажмите на данную ссылку, и подписка автоматически вставится в INCY:\n"
+            f"https://{RENDER_URL}/{uid}", 
+            parse_mode="Markdown"
+        )
+        return
+
+    welcome_text = (
+        "⭐ **ДОБРО ПОЖАЛОВАТЬ В LimeСБП** ⭐\n\n"
+        "Вы находитесь в официальном боте Системы Безопасного Подключения.\n\n"
+        "🔹 **Наши преимущества:**\n"
+        "— Полная совместимость с современным клиентом **INCY**.\n"
+        "— Мгновенная настройка в один клик через URL-схемы.\n"
+        "— Высочайшая скорость без ограничений по трафику.\n\n"
+        f"💳 **Стоимость активации:** {int(PAYMENT_AMOUNT)} рублей (единоразово).\n\n"
+        "🚀 *Нажмите кнопку ниже, чтобы получить свой уникальный ключ и начать работу.*"
+    )
+    await message.answer(welcome_text, reply_markup=get_main_kb(), parse_mode="Markdown")
+
+@dp.callback_query_handler(lambda c: c.data == 'start_payment')
+async def process_payment_step(callback: types.CallbackQuery):
+    try: await bot.delete_message(callback.message.chat.id, callback.message.message_id)
+    except: pass
+    
+    uid = callback.from_user.id
+    wait_msg = await bot.send_message(uid, "⏳ **Генерация персонального счета...**")
+    
+    headers = {"X-MerchantId": str(PLATEGA_MERCHANT_ID), "X-Secret": str(PLATEGA_SECRET), "Content-Type": "application/json"}
+    payload = {"paymentMethod": 2, "paymentDetails": {"amount": PAYMENT_AMOUNT, "currency": "RUB"}, "description": f"ID {uid}", "payload": str(uid)}
+    
+    async with aiohttp.ClientSession() as session:
+        try:
+            async with session.post(f"{BASE_URL}/transaction/process", json=payload, headers=headers) as resp:
+                if resp.status == 200:
+                    data = await resp.json()
+                    kb = types.InlineKeyboardMarkup(row_width=1).add(
+                        types.InlineKeyboardButton("🔗 ОПЛАТИТЬ (СБП)", url=data.get("redirect")),
+                        types.InlineKeyboardButton("✅ ПРОВЕРИТЬ ОПЛАТУ", callback_data=f"check_{data.get('transactionId')}"),
+                        types.InlineKeyboardButton("❌ ОТМЕНИТЬ", callback_data="cancel_pay")
+                    )
+                    await wait_msg.edit_text(f"💳 **Счет на {int(PAYMENT_AMOUNT)} ₽ сформирован.**\n\nОплатите через СБП и нажмите кнопку проверки:", reply_markup=kb, parse_mode="Markdown")
+                else: await wait_msg.edit_text("❌ Ошибка платежной системы.")
+        except: await wait_msg.edit_text("❌ Ошибка соединения.")
+
+@dp.callback_query_handler(lambda c: c.data == 'cancel_pay')
+async def cancel_payment(callback: types.CallbackQuery):
+    try: await bot.delete_message(callback.message.chat.id, callback.message.message_id)
+    except: pass
+    await cmd_start(callback.message)
+
+@dp.callback_query_handler(lambda c: c.data == 'info_menu')
+async def process_info(callback: types.CallbackQuery):
+    try: await bot.delete_message(callback.message.chat.id, callback.message.message_id)
+    except: pass
+    kb = types.InlineKeyboardMarkup(row_width=1).add(
+        types.InlineKeyboardButton("📄 Политика конфиденциальности", url="https://telegra.ph/Politika-konfidencialnosti-08-15-17"),
+        types.InlineKeyboardButton("⚖️ Соглашение", url="https://telegra.ph/Polzovatelskoe-soglashenie-08-15-10"),
+        types.InlineKeyboardButton("🛠 Поддержка", url="https://t.me/LimeVPNHelpBot"),
+        types.InlineKeyboardButton("⬅️ Назад", callback_data="cancel_pay")
+    )
+    await bot.send_message(callback.message.chat.id, "📖 **ИНФОРМАЦИЯ**", reply_markup=kb, parse_mode="Markdown")
+
+@dp.callback_query_handler(lambda c: c.data.startswith('check_'))
+async def call_check(callback: types.CallbackQuery):
+    tx_id = callback.data.split("_")[1]
+    headers = {"X-MerchantId": str(PLATEGA_MERCHANT_ID), "X-Secret": str(PLATEGA_SECRET)}
+    async with aiohttp.ClientSession() as session:
+        async with session.get(f"{BASE_URL}/transaction/{tx_id}", headers=headers) as resp:
+            if resp.status == 200:
+                data = await resp.json()
+                if data.get("status") == "CONFIRMED":
+                    uid = data.get("payload")
+                    await add_user_to_github(uid)
+                    try: await bot.delete_message(callback.message.chat.id, callback.message.message_id)
+                    except: pass
+                    await bot.send_message(
+                        uid, 
+                        f"✅ **ОПЛАТА ПРИНЯТА!**\n\n"
+                        f"Нажмите на данную ссылку, и подписка автоматически вставится в INCY:\n"
+                        f"https://{RENDER_URL}/{uid}", 
+                        parse_mode="Markdown"
+                    )
+                else: await bot.answer_callback_query(callback.id, "⏳ Оплата не найдена.", show_alert=True)
+
+# --- WEB СЕРВЕР И СКРЫТЫЙ КОНФИГ ---
+
+async def handle_short_link(request):
+    user_id = request.match_info.get('user_id')
+    if not user_id or not user_id.isdigit(): return web.Response(text="Not Found", status=404)
+    if await is_user_in_db(user_id):
+        config_url = f"https://{RENDER_URL}/config/{user_id}"
+        return web.HTTPFound(f"incy://add/{config_url}")
+    return web.Response(text="❌ Доступ закрыт.", status=403)
+
+async def handle_config(request):
+    user_id = request.match_info.get('user_id')
+    if not user_id or not user_id.isdigit(): return web.Response(text="Denied", status=403)
+    if await is_user_in_db(user_id):
+        # Используется переменная CONFIG_PASTE_URL из начала файла
+        return web.HTTPFound(CONFIG_PASTE_URL)
+    return web.Response(text="Invalid Token", status=403)
+
+async def handle_webhook(request):
+    try:
+        data = await request.json()
+        if data.get("status") == "CONFIRMED":
+            uid = data.get("payload")
+            if uid: await add_user_to_github(uid)
+        update = types.Update.to_object(data)
+        Dispatcher.set_current(dp)
+        Bot.set_current(bot)
+        await dp.process_update(update)
+    except: pass
+    return web.Response(text="OK")
+
+async def on_startup(app):
+    if bot and RENDER_URL:
+        await bot.delete_webhook()
+        await bot.set_webhook(f"https://{RENDER_URL}/{API_TOKEN}")
+
+if __name__ == '__main__':
+    app = web.Application()
+    if API_TOKEN: app.router.add_post(f'/{API_TOKEN}', handle_webhook)
+    app.router.add_get('/config/{user_id}', handle_config)
+    app.router.add_get('/{user_id}', handle_short_link)
+    app.router.add_get('/', lambda r: web.Response(text="LimeСБП Active"))
+    app.on_startup.append(on_startup)
+    web.run_app(app, host='0.0.0.0', port=int(os.environ.get("PORT", 10000)))
