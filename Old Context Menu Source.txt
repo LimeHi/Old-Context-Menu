@@ -12,6 +12,225 @@ from aiogram.utils import exceptions
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)
 
+# --- КОНФИГУРАЦИЯ ИЗ ПЕРЕМЕННЫХ ОКРУЖЕНИЯ RENDER ---
+API_TOKEN = os.getenv("TELEGRAM_TOKEN")
+RENDER_URL = os.getenv("RENDER_EXTERNAL_HOSTNAME", "limevpnsubbot.onrender.com")
+
+# ТЕПЕРЬ ССЫЛКА БЕРЕТСЯ ИЗ ПАНЕЛИ RENDER (Вкладка Environment)
+CONFIG_PASTE_URL = os.getenv("CONFIG_PASTE_URL", "https://pastebin.com/raw/iGePX40Y")
+
+# Настройки платежей
+PAYMENT_AMOUNT = 140.0  
+PLATEGA_MERCHANT_ID = os.getenv("PLATEGA_MERCHANT_ID")
+PLATEGA_SECRET = os.getenv("PLATEGA_SECRET")
+BASE_URL = "https://app.platega.io"
+
+# GitHub БД
+GH_TOKEN = os.getenv("GITHUB_TOKEN")
+GH_REPO = os.getenv("GITHUB_REPO")
+GH_FILE = os.getenv("GITHUB_FILENAME", "database.txt")
+
+bot = None
+dp = None
+
+if API_TOKEN:
+    try:
+        bot = Bot(token=API_TOKEN)
+        dp = Dispatcher(bot)
+        logging.info("✅ Бот LimeСБП успешно запущен.")
+    except exceptions.ValidationError:
+        logging.error("❌ ОШИБКА: Токен Telegram невалиден!")
+
+# --- РАБОТА С GITHUB API ---
+
+async def is_user_in_db(user_id):
+    if not GH_TOKEN or not GH_REPO: return False
+    target_id = str(user_id).strip()
+    url = f"https://api.github.com/repos/{GH_REPO}/contents/{GH_FILE}"
+    headers = {"Authorization": f"token {GH_TOKEN}", "Accept": "application/vnd.github.v3+json"}
+    async with aiohttp.ClientSession() as session:
+        try:
+            async with session.get(url, headers=headers, timeout=10) as resp:
+                if resp.status == 200:
+                    data = await resp.json()
+                    content = base64.b64decode(data['content']).decode('utf-8')
+                    return target_id in [line.strip() for line in content.splitlines()]
+        except: pass
+    return False
+
+async def add_user_to_github(user_id):
+    if not GH_TOKEN or not GH_REPO: return False
+    url = f"https://api.github.com/repos/{GH_REPO}/contents/{GH_FILE}"
+    headers = {"Authorization": f"token {GH_TOKEN}", "Accept": "application/vnd.github.v3+json"}
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url, headers=headers) as resp:
+            sha, content = "", ""
+            if resp.status == 200:
+                data = await resp.json()
+                sha = data['sha']
+                content = base64.b64decode(data['content']).decode('utf-8')
+            if str(user_id) in content.splitlines(): return True
+            new_content = content + f"{user_id}\n"
+            payload = {"message": f"Pay {user_id}", "content": base64.b64encode(new_content.encode()).decode(), "sha": sha}
+            async with session.put(url, json=payload, headers=headers) as p:
+                return p.status in [200, 201]
+
+# --- ЛОГИКА БОТА ---
+
+def get_main_kb():
+    kb = types.InlineKeyboardMarkup(row_width=1)
+    kb.add(
+        types.InlineKeyboardButton(f"💎 АКТИВИРОВАТЬ LimeСБП — {int(PAYMENT_AMOUNT)} ₽", callback_data="start_payment"),
+        types.InlineKeyboardButton("ℹ️ ИНФОРМАЦИЯ", callback_data="info_menu")
+    )
+    return kb
+
+@dp.message_handler(commands=['start'])
+async def cmd_start(message: types.Message):
+    uid = message.from_user.id
+    if await is_user_in_db(uid):
+        await message.reply(
+            f"✅ **ДОСТУП АКТИВИРОВАН!**\n\n"
+            f"Нажмите на данную ссылку, и подписка автоматически вставится в INCY:\n"
+            f"https://{RENDER_URL}/{uid}", 
+            parse_mode="Markdown"
+        )
+        return
+
+    welcome_text = (
+        "⭐ **ДОБРО ПОЖАЛОВАТЬ В LimeСБП** ⭐\n\n"
+        "Вы находитесь в официальном боте Системы Безопасного Подключения.\n\n"
+        "🔹 **Наши преимущества:**\n"
+        "— Полная совместимость с современным клиентом **INCY**.\n"
+        "— Мгновенная настройка в один клик через URL-схемы.\n"
+        "— Высочайшая скорость без ограничений по трафику.\n\n"
+        f"💳 **Стоимость активации:** {int(PAYMENT_AMOUNT)} рублей (единоразово).\n\n"
+        "🚀 *Нажмите кнопку ниже, чтобы получить свой уникальный ключ и начать работу.*"
+    )
+    await message.answer(welcome_text, reply_markup=get_main_kb(), parse_mode="Markdown")
+
+@dp.callback_query_handler(lambda c: c.data == 'start_payment')
+async def process_payment_step(callback: types.CallbackQuery):
+    try: await bot.delete_message(callback.message.chat.id, callback.message.message_id)
+    except: pass
+    
+    uid = callback.from_user.id
+    wait_msg = await bot.send_message(uid, "⏳ **Генерация персонального счета...**")
+    
+    headers = {"X-MerchantId": str(PLATEGA_MERCHANT_ID), "X-Secret": str(PLATEGA_SECRET), "Content-Type": "application/json"}
+    payload = {"paymentMethod": 2, "paymentDetails": {"amount": PAYMENT_AMOUNT, "currency": "RUB"}, "description": f"ID {uid}", "payload": str(uid)}
+    
+    async with aiohttp.ClientSession() as session:
+        try:
+            async with session.post(f"{BASE_URL}/transaction/process", json=payload, headers=headers) as resp:
+                if resp.status == 200:
+                    data = await resp.json()
+                    kb = types.InlineKeyboardMarkup(row_width=1).add(
+                        types.InlineKeyboardButton("🔗 ОПЛАТИТЬ (СБП)", url=data.get("redirect")),
+                        types.InlineKeyboardButton("✅ ПРОВЕРИТЬ ОПЛАТУ", callback_data=f"check_{data.get('transactionId')}"),
+                        types.InlineKeyboardButton("❌ ОТМЕНИТЬ", callback_data="cancel_pay")
+                    )
+                    await wait_msg.edit_text(f"💳 **Счет на {int(PAYMENT_AMOUNT)} ₽ сформирован.**\n\nОплатите через СБП и нажмите кнопку проверки:", reply_markup=kb, parse_mode="Markdown")
+                else: await wait_msg.edit_text("❌ Ошибка платежной системы.")
+        except: await wait_msg.edit_text("❌ Ошибка соединения.")
+
+@dp.callback_query_handler(lambda c: c.data == 'cancel_pay')
+async def cancel_payment(callback: types.CallbackQuery):
+    try: await bot.delete_message(callback.message.chat.id, callback.message.message_id)
+    except: pass
+    await cmd_start(callback.message)
+
+@dp.callback_query_handler(lambda c: c.data == 'info_menu')
+async def process_info(callback: types.CallbackQuery):
+    try: await bot.delete_message(callback.message.chat.id, callback.message.message_id)
+    except: pass
+    kb = types.InlineKeyboardMarkup(row_width=1).add(
+        types.InlineKeyboardButton("📄 Политика конфиденциальности", url="https://telegra.ph/Politika-konfidencialnosti-08-15-17"),
+        types.InlineKeyboardButton("⚖️ Соглашение", url="https://telegra.ph/Polzovatelskoe-soglashenie-08-15-10"),
+        types.InlineKeyboardButton("🛠 Поддержка", url="https://t.me/LimeVPNHelpBot"),
+        types.InlineKeyboardButton("⬅️ Назад", callback_data="cancel_pay")
+    )
+    await bot.send_message(callback.message.chat.id, "📖 **ИНФОРМАЦИЯ**", reply_markup=kb, parse_mode="Markdown")
+
+@dp.callback_query_handler(lambda c: c.data.startswith('check_'))
+async def call_check(callback: types.CallbackQuery):
+    tx_id = callback.data.split("_")[1]
+    headers = {"X-MerchantId": str(PLATEGA_MERCHANT_ID), "X-Secret": str(PLATEGA_SECRET)}
+    async with aiohttp.ClientSession() as session:
+        async with session.get(f"{BASE_URL}/transaction/{tx_id}", headers=headers) as resp:
+            if resp.status == 200:
+                data = await resp.json()
+                if data.get("status") == "CONFIRMED":
+                    uid = data.get("payload")
+                    await add_user_to_github(uid)
+                    try: await bot.delete_message(callback.message.chat.id, callback.message.message_id)
+                    except: pass
+                    await bot.send_message(
+                        uid, 
+                        f"✅ **ОПЛАТА ПРИНЯТА!**\n\n"
+                        f"Нажмите на данную ссылку, и подписка автоматически вставится в INCY:\n"
+                        f"https://{RENDER_URL}/{uid}", 
+                        parse_mode="Markdown"
+                    )
+                else: await bot.answer_callback_query(callback.id, "⏳ Оплата не найдена.", show_alert=True)
+
+# --- WEB СЕРВЕР И СКРЫТЫЙ КОНФИГ ---
+
+async def handle_short_link(request):
+    user_id = request.match_info.get('user_id')
+    if not user_id or not user_id.isdigit(): return web.Response(text="Not Found", status=404)
+    if await is_user_in_db(user_id):
+        config_url = f"https://{RENDER_URL}/config/{user_id}"
+        return web.HTTPFound(f"incy://add/{config_url}")
+    return web.Response(text="❌ Доступ закрыт.", status=403)
+
+async def handle_config(request):
+    user_id = request.match_info.get('user_id')
+    if not user_id or not user_id.isdigit(): return web.Response(text="Denied", status=403)
+    if await is_user_in_db(user_id):
+        # Используем динамическую переменную
+        return web.HTTPFound(CONFIG_PASTE_URL)
+    return web.Response(text="Invalid Token", status=403)
+
+async def handle_webhook(request):
+    try:
+        data = await request.json()
+        if data.get("status") == "CONFIRMED":
+            uid = data.get("payload")
+            if uid: await add_user_to_github(uid)
+        update = types.Update.to_object(data)
+        Dispatcher.set_current(dp)
+        Bot.set_current(bot)
+        await dp.process_update(update)
+    except: pass
+    return web.Response(text="OK")
+
+async def on_startup(app):
+    if bot and RENDER_URL:
+        await bot.delete_webhook()
+        await bot.set_webhook(f"https://{RENDER_URL}/{API_TOKEN}")
+
+if __name__ == '__main__':
+    app = web.Application()
+    if API_TOKEN: app.router.add_post(f'/{API_TOKEN}', handle_webhook)
+    app.router.add_get('/config/{user_id}', handle_config)
+    app.router.add_get('/{user_id}', handle_short_link)
+    app.router.add_get('/', lambda r: web.Response(text="LimeСБП Active"))
+    app.on_startup.append(on_startup)
+    web.run_app(app, host='0.0.0.0', port=int(os.environ.get("PORT", 10000)))import os
+import logging
+import asyncio
+import json
+import aiohttp
+import base64
+import time
+from aiohttp import web
+from aiogram import Bot, Dispatcher, types
+from aiogram.utils import exceptions
+
+# Настройка логирования
+logging.basicConfig(level=logging.INFO)
+
 # --- БЛОК КОНФИГУРАЦИИ (МЕНЯТЬ ТУТ) ---
 API_TOKEN = os.getenv("TELEGRAM_TOKEN")
 RENDER_URL = os.getenv("RENDER_EXTERNAL_HOSTNAME", "limevpnsubbot.onrender.com")
