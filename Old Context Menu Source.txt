@@ -1,3 +1,9 @@
+#profile-title: 🍋‍🟩LimeVPN🍋‍🟩
+#profile-update-interval: 1
+#announce: ❗Свободного интернета ❗
+#support-url: https://t.me/LimeVPNHelpbot
+#profile-web-page-url: https://t.me/LimeVPNSub
+#hide-settings: 1
 vless://7189ddca-48fb-0172-8f7a-ae89ae3b0544@144.31.129.174:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=s3-ru-central-1.rucdn777.com&fp=chrome&security=reality&pbk=sYDQC1RUZKqtJau7wrl-i5yAYy613d9e72FRGAwvYUM&sid=#%F0%9F%87%AA%F0%9F%87%AA%20%D0%AD%D1%81%D1%82%D0%BE%D0%BD%D0%B8%D1%8F%201
 vless://320f370f-2302-475d-8bb3-379ee7a9a9b3@ee.skytunnel.pw:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=yandex.ru&fp=qq&security=reality&pbk=CNkAFTW9giSVXiW68A9OqlSKy9HJ0pLmgEL4X4PzrHQ&sid=#%F0%9F%87%AA%F0%9F%87%AA%20%D0%AD%D1%81%D1%82%D0%BE%D0%BD%D0%B8%D1%8F%202
 vless://47bfe64f-03d1-4ab8-91ec-e3c7fbc9e4a9@45.38.37.197:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=helpdesk.ispmanager.tech&fp=chrome&security=reality&pbk=bXp88Be-RZiweHie-Z5lQNIeeXnJ00HaNbpMUQ_sSTQ&sid=6ba160bb8029c5f2#%F0%9F%87%B1%F0%9F%87%BB%20%D0%9B%D0%B0%D1%82%D0%B2%D0%B8%D1%8F
