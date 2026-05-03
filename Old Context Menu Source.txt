@@ -1,3 +1,10 @@
+d91-4ce0-4903-a238-541d78de22b7@fin.normbot.ru:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fin.normbot.ru&fp=qq&security=reality&pbk=pgG2grngQEtOFJImLfz0AEm-O2IodM2jCY4aMCYQI1U&sid=d869895b2a50728d#%F0%9F%87%AB%F0%9F%87%AE%20%D0%A4%D0%B8%D0%BD%D0%BB%D1%8F%D0%BD%D0%B4%D0%B8%D1%8F
+#profile-title: 🍋‍🟩LimeVPN🍋‍🟩
+#profile-update-interval: 1
+#announce: ❗Свободного интернета ❗
+#support-url: https://t.me/LimeVPNHelpbot
+#profile-web-page-url: https://t.me/LimeVPNSub
+#hide-settings: 1
 vless://77ff4d91-4ce0-4903-a238-541d78de22b7@yes.normbot.ru:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=yes.normbot.ru&fp=qq&security=reality&pbk=pgG2grngQEtOFJImLfz0AEm-O2IodM2jCY4aMCYQI1U&sid=eef0f48d4a80651a#%F0%9F%87%AA%F0%9F%87%AA%20%D0%AD%D1%81%D1%82%D0%BE%D0%BD%D0%B8%D1%8F
 vless://77ff4d91-4ce0-4903-a238-541d78de22b7@avstrianoda.normbot.ru:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=avstrianoda.normbot.ru&fp=qq&security=reality&pbk=pgG2grngQEtOFJImLfz0AEm-O2IodM2jCY4aMCYQI1U&sid=6aa2d2e950441a9a#%F0%9F%87%A6%F0%9F%87%B9%20%D0%90%D0%B2%D1%81%D1%82%D1%80%D0%B8%D1%8F
 vless://77ff4d91-4ce0-4903-a238-541d78de22b7@185.189.46.98:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=hvec.normbot.ru&fp=qq&security=reality&pbk=pgG2grngQEtOFJImLfz0AEm-O2IodM2jCY4aMCYQI1U&sid=0a8428f5ab26ef5a#%F0%9F%87%B8%F0%9F%87%AA%20%D0%A8%D0%B2%D0%B5%D1%86%D0%B8%D1%8F
