@@ -1,9 +1,3 @@
-#profile-title: 🍋‍🟩LimeVPN🍋‍🟩
-#profile-update-interval: 1
-#announce: ❗Свободного интернета ❗
-#support-url: https://t.me/LimeVPNHelpbot
-#profile-web-page-url: https://t.me/LimeVPNSub
-#hide-settings: 1
 vless://1a130076-19f2-470f-8561-d536acec9590@swed.lumixnet.com:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=swed.lumixnet.com&fp=chrome&security=reality&pbk=cM7DvI5154nlTnovCUR-JZSq3jKLy5nME8rlJfdE0WU&sid=c2863747e0abe44e#%F0%9F%87%B8%F0%9F%87%AA%20%D0%A8%D0%B2%D0%B5%D1%86%D0%B8%D1%8F
 vless://1a130076-19f2-470f-8561-d536acec9590@belg.lumixnet.com:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=belg.lumixnet.com&fp=chrome&security=reality&pbk=DyErfmoPqQ390p3fFAATDfmZ0SNXx_T3BzxWnGwnymY&sid=ba517cf4252df916#%F0%9F%87%A7%F0%9F%87%AA%20%D0%91%D0%B5%D0%BB%D1%8C%D0%B3%D0%B8%D1%8F
 vless://1a130076-19f2-470f-8561-d536acec9590@fin.lumixnet.com:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fin.lumixnet.com&fp=chrome&security=reality&pbk=kmAVs3zjBhf0jPZpQqmMp1mIIcMJD6SqEtEMNoKVsFg&sid=00ba69ab2e6027d9#%F0%9F%87%AB%F0%9F%87%AE%20%D0%A4%D0%B8%D0%BD%D0%BB%D1%8F%D0%BD%D0%B4%D0%B8%D1%8F
